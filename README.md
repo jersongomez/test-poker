@@ -17,7 +17,7 @@ no es escalera:	7-8-12-13-14
 La	funcion	debe	validar	un	caso	de	pruebas	similar	a	este:
 
 ```
-class	Poker	extends	TestCase 
+class Poker extends TestCase 
 {				
     public function testAlgorithm() {						
         $results1 = isStraight([2,	3,	4	,5,	6]);						
@@ -57,4 +57,10 @@ docker exec -it poker-php-container /bin/sh
 Inside Docker Container go to /var/www/html and run:
 ```
 composer install
+```
+
+#### Unit Testing
+Inside Docker Container, run this command in project root folder (/var/www/html)
+```
+./vendor/phpunit/phpunit/phpunit --verbose tests_UnitTest_PokerTest
 ```
