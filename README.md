@@ -35,7 +35,7 @@ class Poker extends TestCase
 }
 ```
 
-### Envoirement install
+### Environment install
 
 ##### Build Docker image
 Run this command on project root
