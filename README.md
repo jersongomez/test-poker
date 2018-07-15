@@ -1,4 +1,4 @@
-# test-pocker
+# test-poker
 
 ### Ejercicio
 Escribir una funcion	que	determine	si	un	conjunto	de	cartas	de	una	lista	representan	una	escalera	de	poker	(5 cartas	con	valores	consecutivos)	o	no.
