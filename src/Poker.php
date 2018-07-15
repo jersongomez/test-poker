@@ -3,6 +3,9 @@ namespace App;
 
 class Poker
 {
+    /**
+     * @constant POKER_CARDS_QUANTITY
+     */
     const POKER_CARDS_QUANTITY = 5;
 
     /**
@@ -22,6 +25,10 @@ class Poker
         return true;
     }
 
+    /**
+     * @param array $cards
+     * @return bool
+     */
     private function validate(array $cards) : bool
     {
         $qty = count($cards);
@@ -38,7 +45,11 @@ class Poker
         return true;
     }
 
-    private function isConsecutive(array $cards)
+    /**
+     * @param array $cards
+     * @return bool
+     */
+    private function isConsecutive(array $cards) : bool
     {
         sort($cards);
 
@@ -59,5 +70,4 @@ class Poker
 
         return count($consecutiveNumbers) == Poker::POKER_CARDS_QUANTITY;
     }
-
 }
